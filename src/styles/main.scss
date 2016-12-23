@@ -1,0 +1,90 @@
+/* Background pattern from subtlepatterns.com */
+
+/* Mixins */
+@mixin date() {
+    color: #243245;
+    font-size: 0.75em;
+}
+
+@mixin tag {
+    background: #363636;
+    color: #f4f4f4;
+    border-radius: 0.5em;
+    text-decoration: none;
+    font-size: 0.75em;
+    padding: 0.3rem;
+    margin: 0 0.1rem;
+}
+
+/* Main */
+
+html, body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: url(/img/type.png);
+    color: #CACACA;
+    font-size: 100%;
+
+    a {
+        color: white;
+        font-decoration: none;
+    }
+}
+
+.main {
+    color: black;
+    background-color: #f4f4f4;
+    border-bottom-left-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
+
+    a {
+        color: #243245;
+
+        &:hover { font-decoration: underline; }
+    }
+
+    .post-item {
+        .date {
+            @include date();
+        }
+
+        .tag {
+            @include tag();
+        }
+
+        .header {
+            margin-bottom: 3em;
+        }
+
+        .content {
+            a { color: blue; }
+        }
+    }
+
+    .post-list-item {
+        margin-bottom: 3em;
+
+        .date {
+            @include date();
+        }
+
+        .tag {
+            @include tag();
+        }
+
+        .description {
+            margin-top: 1em;
+        }
+    }
+
+}
+
+.sidebar {
+    .site-details {
+        .title { 
+            .light { color: #FFFFFF; }
+            .dark { color: #585757; }
+        }
+    }
+}
+
+

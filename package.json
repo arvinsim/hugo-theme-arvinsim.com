@@ -1,0 +1,27 @@
+{
+  "name": "hugo-theme-arvinsim.com",
+  "version": "1.0.0",
+  "description": "A theme for arvinsim.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvinsim/hugo-theme-arvinsim.com.git"
+  },
+  "keywords": [
+    "hugo",
+    "theme"
+  ],
+  "author": "Arthur Vincent Simon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arvinsim/hugo-theme-arvinsim.com/issues"
+  },
+  "homepage": "https://github.com/arvinsim/hugo-theme-arvinsim.com#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.0.0"
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{ .Site.Title }}</title>
+    {{ partial "head.html" . }}
+</head>
+
+<body>
+    {{ partial "header.html" . }}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 main">
+                <article class="post-item" itemscope="" itemtype="https://schema.org/BlogPosting">
+                    <div class="header">
+                        <h1 class="title" itemprop="name">{{ .Title }}</h1>
+                        <span class="date" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</span>
+                        {{ range .Params.tags }}
+                            <a href="/tags/{{ . | urlize }}" class="tag">{{ . }}</a>
+                        {{ end }}
+                    </div>
+                    <div class="content" itemprop="text">{{ .Content }}</div>
+                </article>
+            </div>
+            {{ partial "sidebar.html" . }}
+        </div>
+    </div>
+</body>
+
+</html>
