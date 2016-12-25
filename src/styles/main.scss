@@ -6,7 +6,7 @@
     font-size: 0.75em;
 }
 
-@mixin tag {
+@mixin tag() {
     background: #363636;
     color: #f4f4f4;
     border-radius: 0.5em;
@@ -35,6 +35,7 @@ html, body {
     background-color: #f4f4f4;
     border-bottom-left-radius: 0.25em;
     border-bottom-right-radius: 0.25em;
+    padding: 0 40px;
 
     a {
         color: #243245;
