@@ -7,6 +7,12 @@
         </h1>
         <div class="description">Observations on things of interest</div>
     </section>
+    <section class="categories">
+        <h2>Categories</h2>
+        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+            <a href="/categories/{{ $name | urlize }}" class="category">{{ $name }}</a>
+        {{ end }}
+    </section>
     <section class="contact-details">
         <h2>Contacts</h2>
 
