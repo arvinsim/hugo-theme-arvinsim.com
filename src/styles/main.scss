@@ -57,7 +57,14 @@ html, body {
         }
 
         .content {
-            a { color: blue; }
+            a {
+                color: #5f46ff;
+            }
+
+            p {
+                line-height: 1.6em;
+                margin: 0 0 2em;
+            }
         }
     }
 
@@ -84,6 +91,10 @@ html, body {
         .title { 
             .light { color: #FFFFFF; }
             .dark { color: #585757; }
+
+            :hover {
+                text-decoration: none;
+            }
         }
     }
 
