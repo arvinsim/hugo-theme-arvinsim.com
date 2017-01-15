@@ -1,14 +1,32 @@
 /* Background pattern from subtlepatterns.com */
 
+// Palette courtesy of Open Color
+// https://yeun.github.io/open-color/
+$oc-gray-0: #F8F9FA;
+$oc-gray-1: #f1f3f5;
+$oc-gray-2: #e9ecef;
+$oc-gray-3: #dee2e6;
+$oc-gray-4: #ced4da;
+$oc-gray-5: #adb5bd;
+$oc-gray-6: #868e96;
+$oc-gray-7: #495057;
+$oc-gray-8: #343a40;
+$oc-gray-9: #212529;
+
+$color-background: $oc-gray-1;
+$color-background-invert: $oc-gray-8;
+$color-text: $oc-gray-8;
+$color-text-invert: $oc-gray-1;
+
 /* Mixins */
 @mixin date() {
-    color: #243245;
+    color: $oc-gray-6;
     font-size: 0.75em;
 }
 
 @mixin tag() {
-    background: #363636;
-    color: #f4f4f4;
+    background: $color-background-invert;
+    color: $color-text-invert;
     border-radius: 0.5em;
     text-decoration: none;
     font-size: 0.75em;
@@ -22,25 +40,24 @@
 html, body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background: url(/img/type.png);
-    color: #CACACA;
+    color: $color-text;
     font-size: 100%;
 
     a {
-        color: white;
+        color: $color-background;
         text-decoration: none;
     }
 }
 
 .main {
-    color: black;
-    background-color: #f4f4f4;
+    color: $color-text;
+    background-color: $color-background;
     border-bottom-left-radius: 0.25em;
     border-bottom-right-radius: 0.25em;
     padding: 2em 40px;
 
     a {
-        color: #243245;
-
+        color: $color-text;
         &:hover { text-decoration: underline; }
     }
 
@@ -58,10 +75,6 @@ html, body {
         }
 
         .content {
-            a {
-                color: #5f46ff;
-            }
-
             p {
                 line-height: 1.6em;
                 margin: 0 0 2em;
@@ -88,10 +101,13 @@ html, body {
 }
 
 .sidebar {
+    color: $color-text-invert;
+
     .site-details {
         .title { 
-            .light { color: #FFFFFF; }
-            .dark { color: #585757; }
+            .left { color: $oc-gray-0; }
+            .middle { color: $oc-gray-4; }
+            .right { color: $oc-gray-7; }
 
             :hover {
                 text-decoration: none;
@@ -100,8 +116,8 @@ html, body {
     }
 
     .categories .category {
-          background: #f4f4f4;
-          color: #363636;
+          background: $color-background;
+          color: $color-text;
           border-radius: 0.5em;
           text-decoration: none;
           font-size: 0.75em;
