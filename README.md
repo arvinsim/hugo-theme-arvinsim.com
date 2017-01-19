@@ -28,7 +28,7 @@ gulp
 
 ## License
 
-hugot-theme-arvinsim.com is licensed under the [ISC License](LICENSE.md) 
+hugo-theme-arvinsim.com is licensed under the [ISC License](LICENSE.md) 
 
 
 

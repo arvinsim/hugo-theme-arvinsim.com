@@ -5,7 +5,9 @@
                 <span class="left">Ar</span><span class="middle">vin</span><span class="right">sim</span>
             </a>
         </h1>
-        <div class="description">Observations on things of interest</div>
+        {{ with .Site.Params.Tagline }}
+        <div class="description">{{.}}</div>
+        {{ end }}
     </section>
     <section class="categories">
         <h2>Categories</h2>
