@@ -13,21 +13,17 @@
             <a href="/categories/{{ $name | urlize }}" class="category">{{ $name }}</a>
         {{ end }}
     </section>
+
     <section class="contact-details">
         <h2>Contacts</h2>
-
         {{ with .Site.Params.Email }}
-        <div><i class="fa fa-envelope-o"></i><a class="contact" href="mailto:{{.}}" target="_blank">Email</a></div>
+            <a class="contact" href="mailto:{{.}}" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a>
         {{ end }}
-
         {{ with .Site.Params.GithubID }}
-        <div><i class="fa fa-github"></i><a class="contact" href="https://github.com/{{.}}" target="_blank">Github</a></div>
+            <a class="contact" href="https://github.com/{{.}}" target="_blank"><i class="fa fa-github fa-2x"></i></a>
         {{ end }}
-
         {{ with .Site.Params.LinkedInID }}
-            <div><i class="fa fa-linkedin"></i><a class="contact" href="https://linkedin.com/in/{{.}}" target="_blank">LinkedIn</a></div>
+            <a class="contact" href="https://linkedin.com/in/{{.}}" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
         {{ end }}
-
-        <div><i class="fa fa-rss"></i><a class="contact" href="http://arvinsim.com/index.xml" target="_blank">RSS</a></div>
     </section>
 </div>
