@@ -1,3 +1,8 @@
+@import 'include-media/dist/_include-media.scss';
+
+// Breakpoints for include-media
+$breakpoints: (phone: 480px, tablet: 768px, desktop: 1024px);
+
 /* Background pattern from subtlepatterns.com */
 
 // Palette courtesy of Open Color
@@ -80,6 +85,19 @@ html, body {
                 margin: 0 0 2em;
             }
         }
+
+        @include media('<tablet') {
+            .title { 
+                font-size: 2em; 
+            }
+
+            .content {
+                font-size: 0.9em; 
+                h1, h2, h3, h4, h5, h6 { font-size: 1.2em; }
+            }
+
+            .tag { font-size: 0.7em; }
+        }
     }
 
     .post-list-item {
@@ -95,6 +113,17 @@ html, body {
 
         .description {
             margin-top: 1em;
+        }
+
+        @include media('<tablet') {
+            .title { 
+                line-height: 0.8;
+                a { font-size: 20px; }
+            }
+
+            .tag { font-size: 0.7em; }
+
+            .description { font-size: 0.9em; }
         }
     }
 
