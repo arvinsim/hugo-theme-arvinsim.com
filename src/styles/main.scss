@@ -7,16 +7,7 @@ $breakpoints: (phone: 480px, tablet: 768px, desktop: 1024px);
 
 // Palette courtesy of Open Color
 // https://yeun.github.io/open-color/
-$oc-gray-0: #F8F9FA;
-$oc-gray-1: #f1f3f5;
-$oc-gray-2: #e9ecef;
-$oc-gray-3: #dee2e6;
-$oc-gray-4: #ced4da;
-$oc-gray-5: #adb5bd;
-$oc-gray-6: #868e96;
-$oc-gray-7: #495057;
-$oc-gray-8: #343a40;
-$oc-gray-9: #212529;
+@import './open-color.scss';
 
 $color-background: $oc-gray-1;
 $color-background-invert: $oc-gray-8;
@@ -84,6 +75,17 @@ html, body {
                 line-height: 1.6em;
                 margin: 0 0 2em;
             }
+
+            a {
+                // TODO: Define proper styles
+                &:link { color: $oc-blue-4; }
+                &:visited { color: $oc-blue-9; }
+                &:hover { color: $oc-blue-4; }
+            }
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: $oc-blue-9;
         }
 
         @include media('<tablet') {
@@ -93,7 +95,9 @@ html, body {
 
             .content {
                 font-size: 0.9em; 
-                h1, h2, h3, h4, h5, h6 { font-size: 1.2em; }
+                h1, h2, h3, h4, h5, h6 { 
+                    font-size: 1.2em; 
+                }
             }
 
             .tag { font-size: 0.7em; }
@@ -113,6 +117,10 @@ html, body {
 
         .description {
             margin-top: 1em;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            a { color: $oc-blue-9; }
         }
 
         @include media('<tablet') {
