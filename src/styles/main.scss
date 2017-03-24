@@ -14,6 +14,9 @@ $color-background-invert: $oc-gray-8;
 $color-text: $oc-gray-8;
 $color-text-invert: $oc-gray-1;
 
+$color-tag-text: $color-text-invert;
+$color-tag-background: $oc-teal-8;
+
 /* Mixins */
 @mixin date() {
     color: $oc-gray-6;
@@ -21,8 +24,8 @@ $color-text-invert: $oc-gray-1;
 }
 
 @mixin tag() {
-    background: $color-background-invert;
-    color: $color-text-invert;
+    color: $color-tag-text;
+    background: $color-tag-background;
     border-radius: 0.5em;
     text-decoration: none;
     font-size: 0.75em;
@@ -79,7 +82,7 @@ h6 { font-size: 0.816; }
 
         .content {
             p {
-                line-height: 1.6em;
+                line-height: 145%;
                 margin: 0 0 2em;
             }
 
@@ -92,7 +95,7 @@ h6 { font-size: 0.816; }
         }
 
         h1, h2, h3, h4, h5, h6 {
-            color: $oc-blue-9;
+            color: $oc-teal-9;
         }
 
         @include media('<tablet') {
@@ -127,7 +130,7 @@ h6 { font-size: 0.816; }
         }
 
         h1, h2, h3, h4, h5, h6 {
-            a { color: $oc-blue-9; }
+            a { color: $oc-teal-9; }
         }
 
         @include media('<tablet') {
