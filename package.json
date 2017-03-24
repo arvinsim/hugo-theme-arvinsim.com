@@ -22,7 +22,9 @@
   "homepage": "https://github.com/arvinsim/hugo-theme-arvinsim.com#readme",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.0.0"
+    "gulp-sass": "^3.1.0",
     "include-media": "^1.4.9",
+    "node-sass": "^4.3.0",
+    "sass-loader": "^4.1.1",
   }
 }
