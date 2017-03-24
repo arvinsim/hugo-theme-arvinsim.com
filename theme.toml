@@ -4,7 +4,7 @@
 name = "hugo-theme-arvinsim.com"
 license = "MIT"
 licenselink = "https://github.com/arvinsim/hugo-theme-arvinsim.com/blob/master/LICENSE.md"
-description = "hugo-theme-arvinsim.com is a simple theme created for the arvinsim.com website."
+description = "hugo-theme-arvinsim.com is a simple theme created for my personal blog."
 homepage = "https://github.com/arvinsim/hugo-theme-arvinsim.com"
 tags = ["dark", "minimalist"]
 features = ["blog"]
@@ -12,4 +12,4 @@ min_version = 0.18
 
 [author]
   name = "Arthur Vincent Simon"
-  homepage = "http://arvinsim.com" 
+  homepage = "http://arthurvincentsimon.com" 

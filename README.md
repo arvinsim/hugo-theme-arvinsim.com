@@ -1,6 +1,6 @@
 # hugo-theme-arvinsim.com
 
-hugo-theme-arvinsim.com is a simple theme created for the [arvinsim.com](http://arvinsim.com) website.
+hugo-theme-arvinsim.com is a simple theme created for my [personal blog](http://arthurvincentsimon.com) website.
 
 ## Usage
 
