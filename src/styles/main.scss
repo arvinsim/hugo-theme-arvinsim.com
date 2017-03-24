@@ -29,6 +29,7 @@ $color-tag-background: $oc-teal-8;
     border-radius: 0.5em;
     text-decoration: none;
     font-size: 0.75em;
+    font-weight: bold;
     padding: 0.3rem;
     margin: 0.2rem 0.1rem;
     display: inline-block;
@@ -159,9 +160,9 @@ h6 { font-size: 0.816; }
             text-transform: uppercase;
             font-size: 3.5em;
 
-            .left { color: $oc-gray-0; }
-            .middle { color: $oc-gray-4; }
-            .right { color: $oc-gray-7; }
+            .left { color: $oc-teal-1; }
+            .middle { color: $oc-teal-4; }
+            .right { color: $oc-teal-7; }
 
             :hover {
                 text-decoration: none;
@@ -175,6 +176,7 @@ h6 { font-size: 0.816; }
           border-radius: 0.5em;
           text-decoration: none;
           font-size: 0.75em;
+          font-weight: bold;
           padding: 0.3rem;
           margin: 0.3rem 0.1rem;
           display: inline-block;
