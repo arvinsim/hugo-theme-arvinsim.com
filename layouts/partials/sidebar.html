@@ -9,6 +9,14 @@
         <div class="description">{{.}}</div>
         {{ end }}
     </section>
+
+    <section class="site-links">
+        <h2>Links</h2>
+        <a href="/about">About</a>
+        <a href="/blog">Blog</a>
+    </section>
+
+
     <section class="categories">
         <h2>Categories</h2>
         {{ range $name, $taxonomy := .Site.Taxonomies.categories }}

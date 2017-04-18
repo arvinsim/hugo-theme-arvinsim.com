@@ -170,6 +170,13 @@ h6 { font-size: 0.816; }
         }
     }
 
+    .site-links {
+        a { 
+            display: block; 
+            color: $oc-teal-4;
+        }
+    }
+
     .categories .category {
           background: $color-background;
           color: $color-text;
