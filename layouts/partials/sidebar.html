@@ -1,6 +1,9 @@
 <div class="col-md-4 sidebar">
     <section class="site-details">
         <h1 class="title">
+            {{ with .Site.Params.Logo }}
+            <img src="{{.}}" alt="logo" class="logo img-circle img-responsive">
+            {{ end }}
             <a href="/">
                 <span class="left">Ar</span><span class="middle">vin</span><span class="right">sim</span>
             </a>
