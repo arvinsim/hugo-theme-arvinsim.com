@@ -1,4 +1,4 @@
-@import 'include-media/dist/_include-media.scss';
+@import 'include-media.scss';
 
 // Breakpoints for include-media
 $breakpoints: (phone: 480px, tablet: 768px, desktop: 1024px);
@@ -54,7 +54,7 @@ h2 { font-size: 1.414em; }
 h3 { font-size: 1.155em; }
 h4 { font-size: 1em; }
 h5 { font-size: 0.894em; }
-h6 { font-size: 0.816; }
+h6 { font-size: 0.816em; }
 
 .main {
     color: $color-text;
