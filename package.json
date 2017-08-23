@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "A theme for arvinsim.com",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arvinsim/hugo-theme-arvinsim.com.git"
+    "url": "https://github.com/arvinsim/hugo-theme-arvinsim.com"
+  },
+  "scripts": {
+    "watch": "webpack --watch -p --progress --display-error-details --colors --bail"
   },
   "keywords": [
     "hugo",
@@ -16,15 +16,15 @@
   ],
   "author": "Arthur Vincent Simon",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/arvinsim/hugo-theme-arvinsim.com/issues"
-  },
-  "homepage": "https://github.com/arvinsim/hugo-theme-arvinsim.com#readme",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
     "include-media": "^1.4.9",
-    "node-sass": "^4.3.0",
+    "node-sass": "^4.5.3",
     "sass-loader": "^4.1.1",
+    "webpack": "^3.5.5"
+  },
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^1.0.1"
   }
 }
