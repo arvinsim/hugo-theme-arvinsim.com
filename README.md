@@ -20,10 +20,10 @@ Install NPM dependencies
 npm install
 ```
 
-Run gulp to compile and watch sass
+Run build to compile and watch sass
 
 ```bash
-gulp
+npm run build
 ```
 
 ## License

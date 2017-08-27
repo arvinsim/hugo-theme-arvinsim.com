@@ -12,7 +12,8 @@
   },
   "keywords": [
     "hugo",
-    "theme"
+    "theme",
+    "webpack"
   ],
   "author": "Arthur Vincent Simon",
   "license": "MIT",
