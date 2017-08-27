@@ -1,10 +1,8 @@
 const path = require("path")
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 module.exports = {
-  entry: [
-    __dirname + "/src/styles/main.scss"
-  ],
+  entry: [__dirname + "/src/styles/main.scss"],
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist")
@@ -29,6 +27,17 @@ module.exports = {
             }
           ]
         })
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "img/[name].[ext]"
+            }
+          }
+        ]
       }
     ]
   },
