@@ -1,3 +1,4 @@
+//@import '~include-media/dist/include-media.scss';
 @import 'include-media.scss';
 
 // Breakpoints for include-media
@@ -39,7 +40,7 @@ $color-tag-background: $oc-teal-8;
 
 html, body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: url(/img/type.png);
+    background: url(../img/type.png);
     color: $color-text;
     font-size: 100%;
 

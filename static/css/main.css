@@ -1,0 +1,140 @@
+/* Background pattern from subtlepatterns.com */
+/* Mixins */
+/* Main */
+html, body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: url(/img/type.png);
+  color: #343a40;
+  font-size: 100%; }
+  html a, body a {
+    color: #f1f3f5;
+    text-decoration: none; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.414em; }
+
+h3 {
+  font-size: 1.155em; }
+
+h4 {
+  font-size: 1em; }
+
+h5 {
+  font-size: 0.894em; }
+
+h6 {
+  font-size: 0.816; }
+
+.main {
+  color: #343a40;
+  background-color: #f1f3f5;
+  border-bottom-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+  padding: 2em 40px; }
+  .main a {
+    color: #343a40; }
+    .main a:hover {
+      text-decoration: underline; }
+  .main .post-item .date {
+    color: #868e96;
+    font-size: 0.75em; }
+  .main .post-item .tag {
+    color: #f1f3f5;
+    background: #099268;
+    border-radius: 0.5em;
+    text-decoration: none;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 0.3rem;
+    margin: 0.2rem 0.1rem;
+    display: inline-block; }
+  .main .post-item .header {
+    margin-bottom: 3em; }
+  .main .post-item .content p {
+    line-height: 145%;
+    margin: 0 0 2em; }
+  .main .post-item .content a:link {
+    color: #4dadf7; }
+  .main .post-item .content a:visited {
+    color: #1862ab; }
+  .main .post-item .content a:hover {
+    color: #4dadf7; }
+  .main .post-item h1, .main .post-item h2, .main .post-item h3, .main .post-item h4, .main .post-item h5, .main .post-item h6 {
+    color: #087f5b; }
+  @media (max-width: 767px) {
+    .main .post-item .title {
+      font-size: 2em; }
+    .main .post-item .content {
+      font-size: 0.9em; }
+      .main .post-item .content h1, .main .post-item .content h2, .main .post-item .content h3, .main .post-item .content h4, .main .post-item .content h5, .main .post-item .content h6 {
+        font-size: 1.2em; }
+    .main .post-item .tag {
+      font-size: 0.7em; } }
+  .main .post-list-item {
+    margin-bottom: 3em; }
+    .main .post-list-item .date {
+      color: #868e96;
+      font-size: 0.75em; }
+    .main .post-list-item .tag {
+      color: #f1f3f5;
+      background: #099268;
+      border-radius: 0.5em;
+      text-decoration: none;
+      font-size: 0.75em;
+      font-weight: bold;
+      padding: 0.3rem;
+      margin: 0.2rem 0.1rem;
+      display: inline-block; }
+    .main .post-list-item .description {
+      margin-top: 1em; }
+    .main .post-list-item h1 a, .main .post-list-item h2 a, .main .post-list-item h3 a, .main .post-list-item h4 a, .main .post-list-item h5 a, .main .post-list-item h6 a {
+      color: #087f5b; }
+    @media (max-width: 767px) {
+      .main .post-list-item .title {
+        line-height: 0.8; }
+        .main .post-list-item .title a {
+          font-size: 20px; }
+      .main .post-list-item .tag {
+        font-size: 0.7em; }
+      .main .post-list-item .description {
+        font-size: 0.9em; } }
+
+.sidebar {
+  color: #f1f3f5; }
+  .sidebar > section {
+    padding: 30px 0; }
+  .sidebar .site-details .title {
+    text-transform: uppercase;
+    font-size: 3.5em; }
+    .sidebar .site-details .title .left {
+      color: #c3fae8; }
+    .sidebar .site-details .title .middle {
+      color: #38d9a9; }
+    .sidebar .site-details .title .right {
+      color: #0ca678; }
+    .sidebar .site-details .title :hover {
+      text-decoration: none; }
+    .sidebar .site-details .title .logo {
+      border: 3px #0ca678 solid;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px; }
+  .sidebar .site-links a {
+    display: block;
+    color: #38d9a9; }
+  .sidebar .categories .category {
+    background: #f1f3f5;
+    color: #343a40;
+    border-radius: 0.5em;
+    text-decoration: none;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 0.3rem;
+    margin: 0.3rem 0.1rem;
+    display: inline-block; }
+  .sidebar .contact-details .contact {
+    padding: 0 4px; }
