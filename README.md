@@ -1,18 +1,18 @@
-# hugo-theme-arvinsim.com
+# hugo-theme-emerald-shadow
 
-hugo-theme-arvinsim.com is a simple theme created for my [personal blog](http://arthurvincentsimon.com) website.
+A dark green theme I created for use in my [personal blog](http://arthurvincentsimon.com).
 
 ## Usage
 
 Clone the repository to your hugo themes directory
 
-```
+```bash
 mkdir themes
 cd themes
-git clone https://github.com/arvinsim/hugo-theme-arvinsim.com.git
+git clone https://github.com/arvinsim/hugo-theme-emerald-shadow.git
 ```
 
-##  Configuration
+## Configuration
 
 Install NPM dependencies
 
@@ -28,8 +28,4 @@ npm run build
 
 ## License
 
-hugo-theme-arvinsim.com is licensed under the [ISC License](LICENSE.md) 
-
-
-
-
+hugo-theme-emerald-shadow is licensed under the [ISC License](LICENSE.md)
